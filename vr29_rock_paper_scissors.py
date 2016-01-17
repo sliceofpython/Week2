@@ -5,8 +5,8 @@ By: VR29
 
 import random
 
-
-computer = random.randint(1,3)
+player = 0
+computer = random.randint(1, 3)
 
 # print (computer)
 
@@ -33,8 +33,8 @@ while True:
         continue
 
 
-if player == computer:
-    print ("Draw")
+if computer == player:
+    print("Draw")
 
 
 elif player == 1:
@@ -54,7 +54,8 @@ elif player == 2:
 
 elif player == 3:
     if computer == 1:
-        print("You lose, rock crushes scrissors.")
+        print("You lose, rock crushes scissors.")
 
     else:
-        print("You win, scrissors cut paper.")
+        print("You win, scissors cut paper.")
+
