@@ -4,7 +4,7 @@
 import random
 
 print('Welcome to rock, paper, scissors.')
-print("Please choose rock, paper or scissors. Enter '0' for rock, '1' for paper or '2' for scissors.") #how to make this go to select
+print("Please choose rock, paper or scissors. Enter '0' for rock, '1' for paper or '2' for scissors.")
 select = ['rock', 'paper', 'scissors']
 human = select[int(input())]
 pc = select[random.randint(0, 2)]
