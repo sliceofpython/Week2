@@ -1,5 +1,6 @@
 """
 More changes to come, quick game before bed
+EDIT: changed human(), now excepts other answers and re asks.
 """
 import random
 print('Lets play a game...\n......\n......\nROCK!\nPAPER!\nSCISSOR!')
@@ -14,7 +15,11 @@ def comp():
         print('RPSMaster5000 picked Scissor')
     return picks
 def human():
-    picks2 = input('Wh4t d0 yOU p1CK $#up!D Hum4N? ')
+    choices = {'rock', 'paper', 'scissor'}
+    picks2 = input('Wh4t d0 yOU p1CK $#up!D Hum4N? ').lower()
+    while picks2 not in choices:
+        print('WE ARE PLAYING ROCK PAPER SCISSOR HUMAN!')
+        picks2 = input('PICK AGAIN!: ').lower()
     return picks2
 def counter():
     picks2 = human()
